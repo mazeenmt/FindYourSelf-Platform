@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+        }
+    
+        header {
+          background-color: #005fcc;
+          color: #fff;
+          text-align: center;
+        }
+    
+        main {
+          flex-grow: 1;
+          overflow-y: auto;
+          padding: 20px;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+    
+        footer {
+          background-color: #fff;
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-top: 1px solid #777;
+        }
+    
+        input[type="text"] {
+          padding: 10px;
+          margin-right: 10px;
+          width: 90%;
+          border: 1px solid #777;
+          border-radius: 10px;
+        }
+    
+        button {
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          background-color: #005fcc;
+          color: #fff;
+          cursor: pointer;
+          width: 10%;
+        }
+        .message{
+            font-size: large;
+        }
+        .doctor-img{
+            width: 40px;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Are you okay?</h1>
+    </header>
+
+    <main>
+    <div class="message">
+        <img class="doctor-img" src="DoctorAI.jpeg" alt="Doctor AI">
+        <strong>Doctor AI:</strong> How do you feel?
+    </div>
+    <div class="message">
+        <img class="doctor-img" src="DoctorAI.jpeg" alt="Doctor AI">
+        <strong>Doctor AI:</strong> Hi there!
+    </div>
+    </main>
+
+    <footer>
+    <input type="text" placeholder="Type your message...">
+    <button>Send</button>
+    </footer>
+</body>
+</html>
